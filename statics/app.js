@@ -2,6 +2,12 @@ var app = angular.module('appGeography', ["ngRoute"]);
 
 app.config(function($routeProvider){
         $routeProvider
+
+        	.when("/", {
+                //controller: "appCtrl",
+                //controllerAs: "vm",
+                templateUrl: "inicio.html"
+            })
             
             .when("/geologia", {
                 //controller: "appCtrl",
