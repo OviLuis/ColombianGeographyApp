@@ -9,13 +9,14 @@
 	<link rel="stylesheet" href="../dist/css/bootstrap.css">
 </head>
 
-<body ng-app="appGeography">
-	<div id="contenedor">
+<body class= "body" ng-app="appGeography">
+	
+	<div class = "row" >
 		<header>
-			<div id="titulo"> <h1> Geografia Colombiana </h1></div>
+			<div class="col-md-12" id="titulo"> <h1> Geografia Colombiana </h1></div>
 		</header>
 		<section>
-			<div id="menu">
+			<div class="col-md-4" id="menu">
 				<a href="#/"><div class="menu">Inicio</div></a>
 				<a href="#/geologia"><div class="menu">Geologia</div></a>
 				<a href="#/geogPolitica"><div class="menu">Geografía política</div></a>
@@ -31,7 +32,7 @@
 
 			</div>
 
-			<div id="contenido" ng-view>
+			<div class="col-md-8" id="contenido" ng-view>
 				
 			</div>
 
@@ -58,6 +59,9 @@
 	<script type="text/javascript" src="../statics/angular-1.2.1/angular-route.js"></script>
 	<script type="text/javascript" src="../statics/angular-1.2.1/angular-route.min.js"></script> 
 	<script src="../statics/app.js"></script>
+
+</body>
+</html>
 
 </body>
 </html>
