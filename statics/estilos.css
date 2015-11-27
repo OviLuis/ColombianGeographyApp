@@ -1,7 +1,6 @@
 
-
 #contenedor{
-	background-color: #e9ffa7;
+	/*background-color: #e9ffa7;*/
 	text-align: center;
 	margin-right: 100px;
 	margin-left: 100px;
@@ -29,13 +28,10 @@
 }
 
 #contenido{
-	background-color: #b37700;
-	
 	float: right; 
 	width: 80%; 
 	height: 500px;
 	margin: 8px;
-	
 }
 
 footer{
@@ -44,4 +40,11 @@ footer{
 	display: block;
 	margin: 20px;
 
+}
+body{
+	background: url("../img/fondo3.png") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
