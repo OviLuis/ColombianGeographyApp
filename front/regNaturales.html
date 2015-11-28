@@ -80,9 +80,9 @@
 		    </div>
 		  </div>
 		</div>
-		
+
 		<div id="imagen">
-			<img src="../img/regiones_naturales.png" />
+			<img id="img1" src="../img/regiones_naturales.png" data-zoom-image="../img/regiones_naturales-Large.svg"/>
 		</div>
 </div>
 
@@ -128,6 +128,10 @@ hasta este punto es la prueba con bootstrap-->
 
 
  -->
+
+ <script type="text/javascript">
+ $("#img1").elevateZoom({ zoomType	: "inner", cursor: "crosshair" }); 
+ </script>
 
 </body>
 </html>
