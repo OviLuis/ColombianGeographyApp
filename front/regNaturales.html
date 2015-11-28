@@ -2,20 +2,126 @@
 <html>
 <head>
 	<title>Regiones Naturales</title>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	
 </head>
 <body>
+		<h3>Regiones Naturales</h3>
+	
+		<div  id ="id0" onclick="document.getElementById('id01').style.display='block'" class="regiones"> region Amazonica</div>
+		<div id ="id1" onclick="document.getElementById('id02').style.display='block'" class="regiones">Región Andina</div>
+		<div id ="id2" onclick="document.getElementById('id03').style.display='block'" class="regiones">Región Caribe</div>
+		<div id ="id3" onclick="document.getElementById('id04').style.display='block'" class="regiones">Región Costa Pacífica</div>
+		<div id ="id4" onclick="document.getElementById('id05').style.display='block'" class="regiones">Región Insular</div>
+		<div id ="id5" onclick="document.getElementById('id06').style.display='block'" class="regiones">Región Orinoquía</div>
 
-	<p>Colombia tiene cinco regiones naturales continentales y una región natural marítima:</p>
+		
 
-<p>Región Amazónica: parte sur de la región oriental de Colombia, región plana de baja altitud. Puede verse o bien como la cuenca plana del Río Amazonas o como la región de la Selva Amazónica de Colombia.</p>
-<p>Región Andina: corresponde a la parte colombiana de los Andes, incluyendo a los valles interandinos de los ríos Cauca y Magdalena.</p>
-<p>Región Caribe: comprende las llanuras costeras del Caribe colombiano y los grupos montañosos de la región que no pertenecen a los Andes como los Montes de María y la Sierra Nevada de Santa Marta.</p>
-<p>Región Costa Pacífica: comprende las llanuras costeras del Pacífico colombiano y los grupos montañosos de la región que no pertenecen a los Andes, en particular la Serranía del Baudó.</p>
+ <div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-animate-left">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">×</span>
+      <p>Región Amazónica: </p>
+      <p>Parte sur de la región oriental de Colombia, región plana de baja altitud. Puede verse o bien como la cuenca plana del Río Amazonas o como la región de la Selva Amazónica de Colombia.</p>
+    </div>
+  </div>
+</div>
 
-<p>Región Insular: comprende a las islas colombianas que no son consideradas islas costeras como el Archipiélago de San Andrés y Providencia en el Mar Caribe occidental y la Isla de Malpelo en el Océano Pacífico.</p>
-<p>Región Orinoquía: norte de la región oriental de Colombia, región plana de baja altitud. Puede verse o bien como la cuenca plana del Río Orinoco o como la región de Llanos Orientales de Colombia.</p>
+<div id="id02" class="w3-modal">
+  <div class="w3-modal-content w3-animate-left">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn">×</span>
+      <p>Región Andina: </p>
+      <p>Corresponde a la parte colombiana de los Andes, incluyendo a los valles interandinos de los ríos Cauca y Magdalena.</p>
+    </div>
+  </div>
+</div> 
 
-<img src="">
+<div id="id03" class="w3-modal">
+  <div class="w3-modal-content w3-animate-left">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id03').style.display='none'" class="w3-closebtn">×</span>
+      <p>Región Caribe: </p>
+      <p>comprende las llanuras costeras del Caribe colombiano y los grupos montañosos de la región que no pertenecen a los Andes como los Montes de María y la Sierra Nevada de Santa Marta.</p>
+    </div>
+  </div>
+</div>
+
+
+<div id="id04" class="w3-modal">
+  <div class="w3-modal-content w3-animate-left">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id04').style.display='none'" class="w3-closebtn">×</span>
+      <p>Región Costa Pacífica: </p>
+      <p>comprende las llanuras costeras del Pacífico colombiano y los grupos montañosos de la región que no pertenecen a los Andes, en particular la Serranía del Baudó.</p>
+    </div>
+  </div>
+</div>
+
+<div id="id05" class="w3-modal">
+  <div class="w3-modal-content w3-animate-left">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id05').style.display='none'" class="w3-closebtn">×</span>
+      <p>Región Insular: </p>
+      <p>comprende a las islas colombianas que no son consideradas islas costeras como el Archipiélago de San Andrés y Providencia en el Mar Caribe occidental y la Isla de Malpelo en el Océano Pacífico.</p>
+    </div>
+  </div>
+</div>
+
+<div id="id06" class="w3-modal">
+  <div class="w3-modal-content w3-animate-left">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id06').style.display='none'" class="w3-closebtn">×</span>
+      <p>Región Orinoquía: </p>
+      <p>norte de la región oriental de Colombia, región plana de baja altitud. Puede verse o bien como la cuenca plana del Río Orinoco o como la región de Llanos Orientales de Colombia.</p>
+    </div>
+  </div>
+</div>
+<div id="imagen">
+	<img src="../img/regiones_naturales.png" width="300" height="300"/>
+</div>
+
+
+		
+		<!-- Esta es la prueba del modal con bootstrap
+ Button trigger modal 
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+Modal 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+hasta este punto es la prueba con bootstrap-->
+	
+
+	<!-- <p>Colombia tiene cinco regiones naturales continentales y una región natural marítima:</p>
+
+
+
+
+
+
+
+
+
+ -->
 
 </body>
 </html>
