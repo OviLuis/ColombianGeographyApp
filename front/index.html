@@ -12,50 +12,50 @@
 </head>
 
 <body class= "body" ng-app="appGeography">
-	
-	<div class = "row" >
-		<header>
-			<div class="col-md-12" id="titulo"> <h1> Geografia Colombiana </h1></div>
-		</header>
-		<section>
-			<div class="col-md-4" id="menu">
-				<a href="#/"><div class="menu">Inicio</div></a>
-				<a href="#/geologia"><div class="menu">Geologia</div></a>
-				<a href="#/geogPolitica"><div class="menu">Geografía política</div></a>
-				<a href="#/regNaturales"><div class="menu">Regiones naturales </div></a>
-				<a href="#/clima"><div class="menu">Clima</div></a>
-				<a href="#/fisografia"><div class="menu">Fisiografía</div></a>
-				<a href="#/hidrografia"><div class="menu">Hidrografía</div></a>
-				<a href="#/parqNaturales"><div class="menu">Parques naturales</div></a>
-				<a href="#/fenomeNaturales"><div class="menu">Fenómenos naturales</div></a>
-				<a href="#/apuntes"><div class="menu">Apuntes</div></a>
-				<a href="#/glosario"><div class="menu">Glosario</div></a>
+	<header>
+		<div class=" encabezado col-md-12">
+			<div class= "col-md-4"><div class="contenedor-globo"></div></div>
+			<div class="col-md-8" id="titulo"> <h1> Geografia Colombiana </h1></div>
+		</div>		
+	</header>
+	<div class="conten" >
+		<div class="col-md-12">
+					<div class="col-md-4" id="menu">
+						<a href="#/"><div class="menu">Inicio</div></a>
+						<a href="#/geologia"><div class="menu">Geologia</div></a>
+						<a href="#/geogPolitica"><div class="menu">Geografía política</div></a>
+						<a href="#/regNaturales"><div class="menu">Regiones naturales </div></a>
+						<a href="#/clima"><div class="menu">Clima</div></a>
+						<a href="#/fisografia"><div class="menu">Fisiografía</div></a>
+						<a href="#/hidrografia"><div class="menu">Hidrografía</div></a>
+						<a href="#/parqNaturales"><div class="menu">Parques naturales</div></a>
+						<a href="#/fenomeNaturales"><div class="menu">Fenómenos naturales</div></a>
+						<a href="#/apuntes"><div class="menu">Apuntes</div></a>
+						<a href="#/glosario"><div class="menu">Glosario</div></a>
+					</div>
+					<div class="col-md-8" id="contenido" ng-view>
+						
+					</div>
 
-
-			</div>
-
-			<div class="col-md-8" id="contenido" ng-view>
-				
-			</div>
-
-			
-		</section>
-
-
-
-
-		<footer>
-			Tulua-Valle 2015 <br>
-			Andrea <br>
-			Luis<br>
-			Kelly<br>
-			Univalle
-
-		</footer>
+		</div>
 	</div>
+	<footer>
+        <div class="row encabezado">
+            <div class="col-md-6">
+                <h3 ><strong>Contactenos</strong></h3> 
+                <h6 >paginasInteractivas@gmail.com</h6>
+                <p >ante cualquier inquietud no dudes es comunicarte 
+                    con nosotros</p>   
+            </div>
 
-	 <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script> -->  
+            <div class="col-md-6">
+                    <h3 ><strong>Desarrollado por</strong></h3>
+                    <p >Kelly Vanessa Monsalve</p> 
+                    <p >Luis Ovidio Gonzalez</p> 
+                    <p >Andrea Mora Ospina </p> 
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="../statics/angular-1.2.1/angular.js"></script>
 	<script src="../statics/angular-1.2.1/angular.min.js"></script>
 	<script type="text/javascript" src="../statics/angular-1.2.1/angular-route.js"></script>
