@@ -1,3 +1,10 @@
+body{
+	background: url("../img/fondo3.png") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
 #contenedor{
 	/*background-color: #e9ffa7;*/
@@ -44,7 +51,7 @@
 
 #contenido{
 	float: right; 
-
+	border: 2px solid #1f1f14;
 	width: 80%; 
 	height: 500px;
 	margin: 8px;
@@ -58,20 +65,12 @@ footer{
 	margin: 20px;
 	border-radius: 4px;
 	margin: 5px;
+}
 
-}
-body{
-	background: url("../img/fondo3.png") no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
 
 
 .regiones{
 	background-color: #696969;
-	
 	text-align: center;
 	border-radius: 8px;
 	width: 200px; 
@@ -79,9 +78,6 @@ body{
 	margin: 10px;
 	margin-left: 50px;
 	color: white
-
-
-
 }
 
 div.regiones:hover {
@@ -94,8 +90,17 @@ div.regiones:hover {
 	
 }
 
-#imagen{
-	float: right;
+/*#regionesNaturales{
+	display: block;
+}*/
+
+#regionesNaturales img{
+	position: absolute;
+	top: 40px;
+	left: 400px;
+
+	width: 500px;
+	height:400px;
 }
 
 
