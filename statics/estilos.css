@@ -1,4 +1,4 @@
-body1{
+body{
 	background: url("../img/fondo3.png") no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -113,11 +113,12 @@ h4{
  	font-size: 20px;
 }
  p{
+ 	text-align: justify;
  	font-family: open sans;
  	font-size: 16px;
  }
 
-#imagen img{
+#imagenRegNaturales img{
 	position: absolute;
 	top: 80px;
 	left: 450px;
@@ -126,8 +127,7 @@ h4{
 
 }
 
-
- figure{
+figure{
 	cursor: pointer;
 	border: 5px solid white;
 
@@ -139,6 +139,15 @@ figure img{
 
 figure:hover img{
 	-webkit-transform: scale(1.5);
+}
+
+#imagenClima img{
+	position: absolute;
+	top: 50px;
+	left: 460px;
+	width: 500px;
+	height:400px;
+
 }
 
 .w3-modal-content{
@@ -275,3 +284,5 @@ div#f1:hover {
 	-moz-box-shadow: 0 5px 5px #777;
 	box-shadow: 0 5px 5px #777;
 }
+
+
