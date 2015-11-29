@@ -1,79 +1,96 @@
-var app = angular.module('appGeography', ["ngRoute"]);
+var app = angular.module('appGeography', ['ui.router']);
 
-app.config(function($routeProvider){
-        $routeProvider
+app.config(function($stateProvider, $urlRouterProvider){
 
-        	.when("/", {
+    $urlRouterProvider.otherwise("/bienvenido");
+
+    $stateProvider
+        .state('presentacion', {
+          url: "/bienvenido",
+          templateUrl: "bienvenidos.html"
+        })
+
+        .state('app', {
+          url: "/index",
+          templateUrl: "template_base.html"
+        })
+        .state('app.inicio', {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/inicio',
                 templateUrl: "inicio.html"
             })
-            
-            .when("/geologia", {
+        .state("app.geologia", {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/geologia',
                 templateUrl: "geologia.html"
             })
 
-            .when("/geogPolitica", {
+         .state("app.geogPolitica", {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/geogPolitica',
                 templateUrl: "geogPolitica.html"
             })
 
-            .when("/regNaturales", {
+            .state("app.regNaturales", {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/regNaturales',
                 templateUrl: "regNaturales.html"
             })
 
-            .when("/clima", {
+            .state("app.clima", {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/clima',
                 templateUrl: "clima.html"
             })
 
-            .when("/fisografia", {
+            .state("app.fisografia", {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/fisografia',
                 templateUrl: "fisografia.html"
             })
 
-            .when("/hidrografia", {
+            .state("app.hidrografia", {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/hidrografia',
                 templateUrl: "hidrografia.html"
             })
 
-            .when("/parqNaturales", {
+            .state("app.parqNaturales", {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/parqNaturales',
                 templateUrl: "parqNaturales.html"
             })
 
-            .when("/fenomeNaturales", {
+            .state("app.fenomeNaturales", {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/fenomeNaturales',
                 templateUrl: "fenomeNaturales.html"
             })
 
-            .when("/apuntes", {
+            .state("app.apuntes", {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/apuntes',
                 templateUrl: "apuntes.html"
             })
 
-            .when("/glosario", {
+            .state("app.glosario", {
                 //controller: "appCtrl",
                 //controllerAs: "vm",
+                url:'/glosario',
                 templateUrl: "glosario.html"
             })
 
-            .when("/geogPolitica", {
-                //controller: "appCtrl",
-                //controllerAs: "vm",
-                templateUrl: "geogPolitica.html"
-            })
+            
 
             
     });

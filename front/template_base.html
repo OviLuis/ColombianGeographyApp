@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head >
+	<title>index</title>
+	
+	
+</head>
+
+<body  class= "body1" >
+	<header>
+		<div class=" encabezado col-md-12">
+			<div class= "col-md-4"><div class="contenedor-globo"></div></div>
+			<div class="col-md-8" id="titulo"> <h1> Geografia Colombiana </h1></div>
+		</div>		
+	</header>
+
+	<div class="conten" >
+		<div class="col-md-12">
+					<div class="col-md-4" id="menu">
+						<a ui-sref="app.inicio"><div class="menu" onclick="init()">Inicio</div></a>
+						<a ui-sref="app.geologia"><div class="menu">Geologia</div></a>
+						<a ui-sref="app.geogPolitica"><div class="menu">Geografía política</div></a>
+						<a ui-sref="app.regNaturales"><div class="menu">Regiones naturales </div></a>
+						<a ui-sref="app.clima"><div class="menu">Clima</div></a>
+						<a ui-sref="app.fisografia"><div class="menu">Fisiografía</div></a>
+						<a ui-sref="app.hidrografia"><div class="menu">Hidrografía</div></a>
+						<a ui-sref="app.parqNaturales"><div class="menu">Parques naturales</div></a>
+						<a ui-sref="app.fenomeNaturales"><div class="menu">Fenómenos naturales</div></a>
+						<a ui-sref="app.apuntes"><div class="menu">Apuntes</div></a>
+						<a ui-sref="app.glosario"><div class="menu">Glosario</div></a>
+					</div>
+
+					<div class="col-md-8" id="contenido" ui-view>
+						<!-- Aqui va todo el contenido -->
+					</div>
+
+		</div>
+	</div>
+	<footer>
+        <div class="row encabezado">
+            <div class="col-md-6">
+                <h3 ><strong>Contactenos</strong></h3> 
+                <h6 >paginasInteractivas@gmail.com</h6>
+                <p >ante cualquier inquietud no dudes es comunicarte 
+                    con nosotros</p>   
+            </div>
+
+            <div class="col-md-6">
+                    <h3 ><strong>Desarrollado por</strong></h3>
+                    <p >Kelly Vanessa Monsalve</p> 
+                    <p >Luis Ovidio Gonzalez</p> 
+                    <p >Andrea Mora Ospina </p> 
+            </div>
+        </div>
+    </footer>
+    
+	
+
+
+</body>
+</html>
+
+

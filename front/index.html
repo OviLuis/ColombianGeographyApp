@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="appGeography">
 <head>
+
 	<title>index</title>
 	<meta charset="utf-8">
 	  
@@ -13,65 +14,19 @@
   	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="../statics/mapa.js"></script>
 	
-</head>
-
-<body onload="init()" class= "body1" ng-app="appGeography">
-	<header>
-		<div class=" encabezado col-md-12">
-			<div class= "col-md-4"><div class="contenedor-globo"></div></div>
-			<div class="col-md-8" id="titulo"> <h1> Geografia Colombiana </h1></div>
-		</div>		
-	</header>
-
-	<div class="conten" >
-		<div class="col-md-12">
-					<div class="col-md-4" id="menu">
-						<a href="#/"><div class="menu" onclick="init()">Inicio</div></a>
-						<a href="#/geologia"><div class="menu">Geologia</div></a>
-						<a href="#/geogPolitica"><div class="menu">Geografía política</div></a>
-						<a href="#/regNaturales"><div class="menu">Regiones naturales </div></a>
-						<a href="#/clima"><div class="menu">Clima</div></a>
-						<a href="#/fisografia"><div class="menu">Fisiografía</div></a>
-						<a href="#/hidrografia"><div class="menu">Hidrografía</div></a>
-						<a href="#/parqNaturales"><div class="menu">Parques naturales</div></a>
-						<a href="#/fenomeNaturales"><div class="menu">Fenómenos naturales</div></a>
-						<a href="#/apuntes"><div class="menu">Apuntes</div></a>
-						<a href="#/glosario"><div class="menu">Glosario</div></a>
-					</div>
-
-					<div class="col-md-8" id="contenido" ng-view>
-						
-					</div>
-
-		</div>
-	</div>
-	<footer>
-        <div class="row encabezado">
-            <div class="col-md-6">
-                <h3 ><strong>Contactenos</strong></h3> 
-                <h6 >paginasInteractivas@gmail.com</h6>
-                <p >ante cualquier inquietud no dudes es comunicarte 
-                    con nosotros</p>   
-            </div>
-
-            <div class="col-md-6">
-                    <h3 ><strong>Desarrollado por</strong></h3>
-                    <p >Kelly Vanessa Monsalve</p> 
-                    <p >Luis Ovidio Gonzalez</p> 
-                    <p >Andrea Mora Ospina </p> 
-            </div>
-        </div>
-    </footer>
-    <script type="text/javascript" src="../statics/angular-1.2.1/angular.js"></script>
-	<script src="../statics/angular-1.2.1/angular.min.js"></script>
-	<script type="text/javascript" src="../statics/angular-1.2.1/angular-route.js"></script>
-	<script type="text/javascript" src="../statics/angular-1.2.1/angular-route.min.js"></script> 
-	<script src="../statics/app.js"></script>
 	
+</head>
+<body>
 
+	<div ui-view>
+		<!-- Aqui va todo -->
+	</div>
 
-</body>
-</html>
+	
+	<script src="../statics/angular-1.2.1/angular.min.js"></script>
+	 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="../statics/app.js"></script>
 
 </body>
 </html>

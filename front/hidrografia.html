@@ -6,7 +6,10 @@
 <body>
 
 	<div class="col-md-10"><h3>Hidrografia</h3></div>
-	<div class="col-md-4">
+	
+	
+
+	<div class="col-md-12">
 		<p>
 			La hidrografía de Colombia es de las más ricas del mundo. Sus principales ríos son el Río Amazonas, Magdalena, el Cauca, el Guaviare, el Putumayo y el Caquetá.
 		</p>
@@ -19,24 +22,50 @@
 		<p>
 			Colombia tiene dos grandes vertientes: la del Océano Pacífico y la del Océano Atlántico.
 		</p>
-		<p>
-			Vertiente Atlántica: abarca los ríos que nacen en el sistema andino y la Sierra Nevada de Santa Marta. Generalmente éstos tienen un curso largo y son navegables en su mayor parte. Sus principales ríos son los ríos Magdalena, Cauca, Atrato, Nechí y Sinú, por parte de la cuenca caribeña; el Arauca, Guaviare, Inírida, Meta y Vichada, en la cuenca del Orinoco; y el Putumayo, Caquetá, Apaporis y Caguán, en la cuenca del Amazonas.
-		</p>
+		<a href="" onclick="document.getElementById('vertienteAtlan').style.display='block'">Vertiente Atlántica</a><br><br>
+		<a href="" onclick="document.getElementById('vertientePaci').style.display='block'">Vertiente Pacifica </a>
 
-		<p>
+
+		<div id="vertienteAtlan" class="w3-modal">
+		  <div class="w3-modal-content w3-animate-left">
+		    <div class="w3-container">
+		      <span onclick="document.getElementById('vertienteAtlan').style.display='none'" class="w3-closebtn">×</span>
+		      <h4>Vertiente Atlántica: </h4> 
+		      <p>
+			 Abarca los ríos que nacen en el sistema andino y la Sierra Nevada de Santa Marta. Generalmente éstos tienen un curso largo y son navegables en su mayor parte. Sus principales ríos son los ríos Magdalena, Cauca, Atrato, Nechí y Sinú, por parte de la cuenca caribeña; el Arauca, Guaviare, Inírida, Meta y Vichada, en la cuenca del Orinoco; y el Putumayo, Caquetá, Apaporis y Caguán, en la cuenca del Amazonas.
+			   </p>
+
+		      <figure>
+		      	<img src="">
+
+		      </figure>
+
+		    </div>
+		  </div>
+		</div>
+
+		<div id="vertientePaci" class="w3-modal">
+		  <div class="w3-modal-content w3-animate-left">
+		    <div class="w3-container">
+		      <span onclick="document.getElementById('vertientePaci').style.display='none'" class="w3-closebtn">×</span>
+		      <h4>Vertiente Pacifica: </h4> 
+		      <p>
 			Vertiente Pacífica: sus ríos nacen en la cordillera Occidental, por lo que son cortos y torrentosos, con pocas partes navegables. Los principales ríos son el Baudó, Patía y San Juan.
 
 		</p>
 
+		      <figure>
+		      	<img src="">
+
+		      </figure>
+
+		    </div>
+		  </div>
+		</div>
+
 		
 
-
-	</div>
-
-	<a href="">Vertiente Pacifica</a>
-	<a href="">Vertiente Atlántica</a>
-
-
+		
 
 </body>
 </html>
