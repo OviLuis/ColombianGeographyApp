@@ -1,4 +1,4 @@
-body{
+body1{
 	background: url("../img/fondo3.png") no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -156,7 +156,7 @@ figure:hover img{
 
 .contenedor-globo
 {
-margin: 3%;
+margin: 1%;
 margin-left: 50%;
 width:92px;
 height:92px;
@@ -202,3 +202,53 @@ background-position:-160px 0px;
 }
 }
 
+#map{
+	width: 62%;
+    height: 81%;
+}
+#imagen{
+	height: 100px;
+	margin-left: 30%;
+}
+.content {
+    margin: 45px auto;
+    max-width: 967px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 2;
+	-webkit-box-shadow:0 1px 100px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 100px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 100px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.contenido-inicial{
+	width: 980px;
+    height: 580px;
+}
+#tituloPrincipal{
+    position: initial;
+    text-align: center;
+    font-size: 200%;
+    height: 100px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    font-weight: bold;
+    color: #2F4F4F;
+}
+#introduccion{
+	text-align: left;
+	font-family:'Comic Sans MS';
+	font-style:italic;
+	color: 	#2F4F4F;
+	margin: 0 15px 33px;
+	font-size: 20px;
+}
+.boton{
+	width: 14%;
+    position: inherit;
+    margin-left: 45%;
+    margin-top: 5%;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+}
