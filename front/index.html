@@ -9,9 +9,11 @@
 	<link rel="stylesheet" href="../dist/css/bootstrap.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="../dist/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="../statics/mapa.js"></script>
 </head>
 
-<body class= "body" ng-app="appGeography">
+<body onload="init()" class= "body" ng-app="appGeography">
 	<header>
 		<div class=" encabezado col-md-12">
 			<div class= "col-md-4"><div class="contenedor-globo"></div></div>
@@ -22,7 +24,7 @@
 	<div class="conten" >
 		<div class="col-md-12">
 					<div class="col-md-4" id="menu">
-						<a href="#/"><div class="menu">Inicio</div></a>
+						<a href="#/"><div class="menu" onclick="init()">Inicio</div></a>
 						<a href="#/geologia"><div class="menu">Geologia</div></a>
 						<a href="#/geogPolitica"><div class="menu">Geografía política</div></a>
 						<a href="#/regNaturales"><div class="menu">Regiones naturales </div></a>
