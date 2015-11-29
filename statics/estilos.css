@@ -252,3 +252,26 @@ background-position:-160px 0px;
     font-family: 'Comic Sans MS';
     font-style: italic;
 }
+#f1{
+
+	width: 25%;
+    margin-left: 14%;
+    position: inherit;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: #696969;
+	text-align: center;
+	height:35px;
+	color: white;
+	border-radius: 5px
+}
+.videos{
+	width: 560px;
+	height: 315px;
+}
+div#f1:hover {
+	background: #777;
+	-webkit-box-shadow: 0 5px 5px #777;
+	-moz-box-shadow: 0 5px 5px #777;
+	box-shadow: 0 5px 5px #777;
+}
