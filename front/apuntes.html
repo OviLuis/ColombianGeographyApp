@@ -4,8 +4,51 @@
 	<title>geologia</title>
 </head>
 <body>
+	<div class="row">
+		<h3>Apuntes de la geografía de Colombia</h3>	
+		<div class="col-md-4 apuntes" >
+			<img id="clip" src="../img/clip.png">
+			<p>¿Sabias que.... La Sierra Nevada tiene una particularidad geográfica muy importante: pertenece a los Andes, pero está aislada de los Andes y es una montaña muy cercana al mar?</p>
+			<div id="ampliar" onclick="document.getElementById('A01').style.display='block'"><p>ver mas</p></div>
+		</div>
 
-	ESte es el template de apuntes
+		
+		<div class="col-md-4 apuntes" >
+			<img id="clip" src="../img/clip.png">
+			<p>¿Sabía usted que... En Risaralda hay muchos balnearios de aguas termales?</p>
+			<div id="ampliar" onclick="document.getElementById('A02').style.display='block'"><p>ver mas</p></div>
+		</div>
 
+		<div class="col-md-4 apuntes" >
+				<img id="clip" src="../img/clip.png">
+			<p>¿Sabía usted que... En Risaralda hay muchos balnearios de aguas termales?</p>
+			<div id="ampliar" onclick="document.getElementById('A02').style.display='block'"><p>ver mas</p></div>
+		</div>
+
+		<div class="col-md-4 apuntes" >
+				<img id="clip" src="../img/clip.png">
+			<p>¿Sabía usted que... En Risaralda hay muchos balnearios de aguas termales?</p>
+			<div id="ampliar" onclick="document.getElementById('A02').style.display='block'"><p>ver mas</p></div>
+		</div>
+
+		<div id="A01" class="w3-modal ">
+			  <div class="w3-animate-left">
+			    <div class="apuntes2 col-md-4"> 
+			      <span onclick="document.getElementById('A01').style.display='none'" class="w3-closebtn">×</span>
+			      <p>¿Sabias que... La Sierra Nevada tiene una particularidad geográfica muy importante: pertenece a los Andes, pero está aislada de los Andes y es una montaña muy cercana al mar?</p> 
+			      <p>Eso hace que se genere mucha biodiversidad. Además, su posición geográfica hace que esté expuesta en un lado hacia la Guajira, hacia ecosistemas semisecos y secos, y hacia la parte interior tenga ecosistemas de influencia tropical.</p>
+			    </div>
+			</div>
+		</div>
+
+		<div id="A02" class="w3-modal ">
+			  <div class="w3-animate-left">
+			    <div class="apuntes2 col-md-4"> 
+			      	<span onclick="document.getElementById('A02').style.display='none'" class="w3-closebtn">×</span>
+			      	<p>¿Sabía usted que... En Risaralda hay muchos balnearios de aguas termales?</p>
+					<p>Eso quiere decir que es agua proveniente del interior de un nevado.  Esta agua es muy medicinal ya que ayuda a los enfermos de artritis, artrosis, etc., Al entrar en aguas termales usted podrá  jugar en el barro que hay siempre en este sitio y le favorecerá porque es muy bueno para la piel, dermatitis, antienvejecimiento, etc</p>
+			    </div>
+			</div>
+		</div>
 </body>
 </html>
