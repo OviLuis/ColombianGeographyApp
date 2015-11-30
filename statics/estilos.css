@@ -347,3 +347,15 @@ div#f1:hover {
 	height:300px;
 
 }
+
+#mapPolitico{
+	width: 700px;
+    height: 600px;
+    float: center;
+    margin-bottom: 2%;
+    margin-left: 18%;
+}  
+.departamentos{
+	margin-left: 1%;
+}  
+
