@@ -278,5 +278,45 @@ div#f1:hover {
 	-moz-box-shadow: 0 5px 5px #777;
 	box-shadow: 0 5px 5px #777;
 }
+}
+.apuntes{
+    background: #ffc;
+    margin: 1%;
+    margin-left: 10%;
+    height: 210px;
+}
 
+.apuntes p{
+	text-align: left;
+    font-family: 'Comic Sans MS';
+    color: #2F4F4F;
+    margin: 2%;
+    font-size: 16px;
+}
+.apuntes2{
+	background: url("../img/apuntes.png") top left no-repeat;
+    margin: -2% auto;
+    margin-left: 35%;
+    height: 100%
+}
 
+.apuntes2 p{
+	text-align: left;
+    font-family: 'Comic Sans MS';
+    color: #2F4F4F;
+    margin: 16%;
+    font-size: 16px;
+}
+
+#ampliar p{
+	color: blue; 
+}
+
+#ampliar p:hover{
+	text-decoration: underline;
+}
+
+#clip{
+	height: 60px;
+    margin-left: 38%;
+}
