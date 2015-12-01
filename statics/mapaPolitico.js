@@ -24,7 +24,7 @@ function mapaP(){
   var infoAmazonas = new google.maps.InfoWindow({
     content: amazonas
   });
-  var placeAmazonas= new google.maps.LatLng(-1.2025172,-72.8145242);
+  var placeAmazonas= new google.maps.LatLng(-3.966555, -69.991130);
   markerAmazonas = new google.maps.Marker({
     position: placeAmazonas,
     title: "Amazonas, Capital: Leticia",
@@ -333,7 +333,7 @@ var markerHuila;
   var infoHuila = new google.maps.InfoWindow({
     content: huila
   });
-  var placeHuila= new google.maps.LatLng(2.444282, -72.266054);
+  var placeHuila= new google.maps.LatLng(2.929689, -75.260032);
   markerHuila = new google.maps.Marker({
     position: placeHuila,
     title: "Huila, Capital: Neiva",
@@ -352,12 +352,12 @@ var markerLaGuajira;
   var infoLaGuajira = new google.maps.InfoWindow({
     content: laGuajira
   });
-  var placeLaGuajira= new google.maps.LatLng(2.444282, -72.266054);
+  var placeLaGuajira= new google.maps.LatLng(11.517158, -72.917030);
   markerLaGuajira = new google.maps.Marker({
     position: placeLaGuajira,
     title: "La Guajira, Capital: Riohacha",
     map: map,
-    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/huila_sm.jpg"
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/guajira_sm.jpg"
   });
   markerLaGuajira.addListener('click', function() {
     infoLaGuajira.open(map, markerLaGuajira);
@@ -371,7 +371,7 @@ var markerMagdalena;
   var infoMagdalena = new google.maps.InfoWindow({
     content: magdalena
   });
-  var placeMagdalena= new google.maps.LatLng(2.444282, -72.266054);
+  var placeMagdalena= new google.maps.LatLng(11.229736, -74.009631);
   markerMagdalena = new google.maps.Marker({
     position: placeMagdalena,
     title: "Magdalena, Capital: Santa Marta",
@@ -390,7 +390,7 @@ var markerMeta;
   var infoMeta = new google.maps.InfoWindow({
     content: meta
   });
-  var placeMeta= new google.maps.LatLng(2.444282, -72.266054);
+  var placeMeta= new google.maps.LatLng(4.105258, -73.616573);
   markerMeta = new google.maps.Marker({
     position: placeMeta,
     title: "Meta, Capital: Villavicencio",
@@ -409,12 +409,12 @@ var markerNarino;
   var infoNarino = new google.maps.InfoWindow({
     content: narino
   });
-  var placeNarino= new google.maps.LatLng(2.444282, -72.266054);
+  var placeNarino= new google.maps.LatLng(1.198260, -77.265549);
   markerNarino = new google.maps.Marker({
     position: placeNarino,
     title: "Nariño, Capital: Pasto",
     map: map,
-    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/nariño_sm.jpg"
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/narino_sm.jpg"
   });
   markerNarino.addListener('click', function() {
     infoNarino.open(map, markerNarino);
@@ -428,12 +428,12 @@ var markerNortedeSantander;
   var nortedeSantander = new google.maps.InfoWindow({
     content: nortedeSantander
   });
-  var placeNortedeSantander= new google.maps.LatLng(2.444282, -72.266054);
+  var placeNortedeSantander= new google.maps.LatLng(7.868116, -72.521235);
   markerNortedeSantander = new google.maps.Marker({
     position: placeNortedeSantander,
     title: "Norte de Santander, Capital: Cucuta",
     map: map,
-    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/nariño_sm.jpg"
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/norte_santander_sm.jpg"
   });
   markerNortedeSantander.addListener('click', function() {
     infoNortedeSantander.open(map, markerNortedeSantander);
@@ -447,7 +447,7 @@ var markerPutumayo;
   var Putumayo = new google.maps.InfoWindow({
     content: putumayo
   });
-  var placePutumayo= new google.maps.LatLng(2.444282, -72.266054);
+  var placePutumayo= new google.maps.LatLng(1.152262, -76.730442);
   markerPutumayo = new google.maps.Marker({
     position: placePutumayo,
     title: "Putumayo, Capital: Mocoa",
@@ -466,12 +466,12 @@ var markerQuindio;
   var quindio = new google.maps.InfoWindow({
     content: quindio
   });
-  var placeQuindio= new google.maps.LatLng(2.444282, -72.266054);
+  var placeQuindio= new google.maps.LatLng(4.549618, -75.680925);
   markerQuindio = new google.maps.Marker({
     position: placeQuindio,
     title: "Quindio, Capital: Armenia",
     map: map,
-    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/putumayo_sm.jpg"
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/quindio_sm.jpg"
   });
   markerQuindio.addListener('click', function() {
     infoQuindio.open(map, markerQuindio);
@@ -485,10 +485,10 @@ var markerRisaralda;
   var risaralda = new google.maps.InfoWindow({
     content: risaralda
   });
-  var placeRisaralda= new google.maps.LatLng(2.444282, -72.266054);
+  var placeRisaralda= new google.maps.LatLng(4.795989, -75.696032);
   markerRisaralda = new google.maps.Marker({
     position: placeRisaralda,
-    title: "Risaralda, Capital: pereira",
+    title: "Risaralda, Capital: Pereira",
     map: map,
     icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/risaralda_sm.jpg"
   });
@@ -504,12 +504,12 @@ var markerAndresyProvidencia;
   var andresyProvidencia = new google.maps.InfoWindow({
     content: andresyProvidencia
   });
-  var placeAndresyProvidencia= new google.maps.LatLng(2.444282, -72.266054);
+  var placeAndresyProvidencia= new google.maps.LatLng(12.5591608,-81.7331177);
   markerAndresyProvidencia = new google.maps.Marker({
     position: placeAndresyProvidencia,
     title: "San Andres y Providencia, Capital: San Andres",
     map: map,
-    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/risaralda_sm.jpg"
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/san_andres_sm.jpg"
   });
   markerAndresyProvidencia.addListener('click', function() {
     infoAndresyProvidencia.open(map, markerAndresyProvidencia);
@@ -523,15 +523,34 @@ var markerSantander;
   var santander = new google.maps.InfoWindow({
     content: santander
   });
-  var placeSantander= new google.maps.LatLng(2.444282, -72.266054);
+  var placeSantander= new google.maps.LatLng(7.128282, -73.091509);
   markerSantander = new google.maps.Marker({
     position: placeSantander,
     title: "Santander, Capital: Bucaramanga",
     map: map,
-    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/sucre_sm.jpg"
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/santander_sm.jpg"
   });
   markerSantander.addListener('click', function() {
     infoSantander.open(map, markerSantander);
+  });
+}
+
+var markerSucre;
+ var sucre = '<div id="content" class="departamentos">'+
+      '<p>Sucre es uno de los 32 departamentos de Colombia. Está localizado al norte del país, en la región Caribe de Colombia. Limita al norte y al oriente con el departamento de Bolívar, al noroccidente con el mar Caribe, en el golfo de Morrosquillo, al sur y occidente con el departamento de Córdoba.</p>'+
+      '</div>';
+  var infoSucre = new google.maps.InfoWindow({
+    content: sucre
+  });
+  var placeSucre= new google.maps.LatLng(9.281917, -75.388991);
+  markerSucre = new google.maps.Marker({
+    position: placeSucre,
+    title: "Sucre, Capital: Sincelejo",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/sucre_sm.jpg"
+  });
+  markerSucre.addListener('click', function() {
+    infoSucre.open(map, markerSucre);
   });
 }
 
@@ -542,7 +561,7 @@ var markerTolima;
   var tolima = new google.maps.InfoWindow({
     content: tolima
   });
-  var placeTolima= new google.maps.LatLng(2.444282, -72.266054);
+  var placeTolima= new google.maps.LatLng(4.454882, -75.193425);
   markerTolima = new google.maps.Marker({
     position: placeTolima,
     title: "Tolima, Capital: Ibague",
@@ -561,12 +580,12 @@ var markerValle;
   var valle = new google.maps.InfoWindow({
     content: valle
   });
-  var placeValle= new google.maps.LatLng(2.444282, -72.266054);
+  var placeValle= new google.maps.LatLng(3.457521, -76.583195);
   markerValle = new google.maps.Marker({
     position: placeValle,
     title: "Valle del Cauca, Capital: Cali",
     map: map,
-    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/tolima_sm.jpg"
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/valle_sm.jpg"
   });
   markerValle.addListener('click', function() {
     infoValle.open(map, markerValle);
@@ -580,10 +599,10 @@ var markerVaupes;
   var vaupes = new google.maps.InfoWindow({
     content: vaupes
   });
-  var placeVaupes= new google.maps.LatLng(2.444282, -72.266054);
+  var placeVaupes= new google.maps.LatLng(1.259381, -70.188659);
   markerVaupes = new google.maps.Marker({
     position: placeVaupes,
-    title: "Vaupes, Capital: Mitú",
+    title: "Vaupés, Capital: Mitú",
     map: map,
     icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/vaupes_sm.jpg"
   });
@@ -600,7 +619,7 @@ var markerVichada;
   var vichada = new google.maps.InfoWindow({
     content: vichada
   });
-  var placeVichada= new google.maps.LatLng(2.444282, -72.266054);
+  var placeVichada= new google.maps.LatLng(6.186094, -67.714494);
   markerVichada = new google.maps.Marker({
     position: placeVichada,
     title: "Vichada, Capital: Puerto Carreño",
