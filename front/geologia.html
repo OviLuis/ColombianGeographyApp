@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>geologia</title>
+
+    <script type="text/javascript">
+    $(document).ready(function()
+    {
+        $("#geologia").mlens(
+        {
+            imgSrc: $("#geologia").attr("data-big"),   // path of the hi-res version of the image
+            lensShape: "circle",                // shape of the lens (circle/square)
+            lensSize: 180,                  // size of the lens (in px)
+            borderSize: 4,                  // size of the lens border (in px)
+            borderColor: "#fff",                // color of the lens border (#hex)
+            borderRadius: 0,                // border radius (optional, only if the shape is square)
+            imgOverlay: $("#geologia").attr("data-overlay"), // path of the overlay image (optional)
+            overlayAdapt: true // true if the overlay image has to adapt to the lens size (true/false)
+        });
+    });
+    </script>
 </head>
 <body>
+	<div class="col-xs-6">
+		<h3>Geología</h3>
+		<p id="parrafos">Colombia se encuentra ubicada en la esquina noroccidental de la placa Sudamericana. Las placas del Caribe, la de Nazca y la de Cocos, atraviesan algunas zonas del territorio continental y marítimo de Colombia.</p>
 
-	ESte es el template de geologia
-
+		<p id="parrafos">En Colombia, las placas tectónicas producen fallas en dirección SE-NW. Un ejemplo de ello ocurre en la falla Romeral en el departamento del Cauca, específicamente en el Patía-Soapaga. También se presentan fallas de esta clase en algunas zonas de cordillera Oriental. Existe otro tipo de fallas conocidas como de rumbo, como la falla de Bucaramanga-Santa Marta, la cual desplazó varios kilómetros la Sierra Nevada de Santa Marta en sentido noreste. En términos geológicos, la cordillera Central fue la primera cadena montañosa que surgió en Colombia, la segunda fue la Occidental y posteriormente emergió la Oriental, en la cual se han encontrado restos de fósiles en zonas cercanas a Villa de Leyva y el Altiplano cundiboyacense.</p>
+</div>
+    <div id="c" class="col-xs-6" >
+       <img id="geologia" src="../img/geologia.png" alt="botella con zoom" data-big="../img/geologia2.png" data-overlay="../img/fondo.png" />
+    </div>
 </body>
 </html>
