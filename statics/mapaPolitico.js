@@ -324,3 +324,291 @@ var markerGuaviare;
     infoGuaviare.open(map, markerGuaviare);
   });
 }
+
+var markerHuila;
+ var huila = '<div id="content" class="departamentos">'+
+      '<p> Huila es uno de los 32 departamentos de Colombia, está localizado al suroccidente del país en la región andina. Su capital es Neiva, considerada como una de las ciudades más importantes del sur de Colombia. Fue creado por la ley 46 del 29 de abril de 1905, constituido por la provincia de Neiva y la del sur, pertenecientes al antiguo Estado Soberano del Tolima. </p>'+
+      '</div>';
+
+  var infoHuila = new google.maps.InfoWindow({
+    content: huila
+  });
+  var placeHuila= new google.maps.LatLng(2.444282, -72.266054);
+  markerHuila = new google.maps.Marker({
+    position: placeHuila,
+    title: "Huila, Capital: Neiva",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/huila_sm.jpg"
+  });
+  markerHuila.addListener('click', function() {
+    infoHuila.open(map, markerHuila);
+  });
+}
+
+var markerLaGuajira;
+ var laGuajira = '<div id="content" class="departamentos">'+
+      '<p> La Guajira es uno de los 32 departamentos en que se constituye Colombia. Está situado al noreste del país y pertenece al grupo de departamentos de la Región Caribe colombiana. Limita al norte y al oeste con el mar Caribe, al este con Venezuela; al sur con el departamento del Cesar y al suroeste con el departamento del Magdalena. </p>'+
+      '</div>';
+  var infoLaGuajira = new google.maps.InfoWindow({
+    content: laGuajira
+  });
+  var placeLaGuajira= new google.maps.LatLng(2.444282, -72.266054);
+  markerLaGuajira = new google.maps.Marker({
+    position: placeLaGuajira,
+    title: "La Guajira, Capital: Riohacha",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/huila_sm.jpg"
+  });
+  markerLaGuajira.addListener('click', function() {
+    infoLaGuajira.open(map, markerLaGuajira);
+  });
+}
+
+var markerMagdalena;
+ var magdalena = '<div id="content" class="departamentos">'+
+      '<p>Magdalena es uno de los 32 departamentos de Colombia. Fue uno de los originales nueve estados que conformaron los Estados Unidos de Colombia. Está al norte del país, en la Región Caribe Colombiana. La capital del departamento es Santa Marta. El Departamento toma el nombre del río que lo baña por su lado occidental Magdalena. en el norte limita con el Mar Caribe, al sur con el departamento de Bolívar, al oriente con los departamentos de Cesar y La Guajira, y al occidente con los departamentos de Atlántico y Bolívar. Su territorio ocupa una superficie de 23.188 km². </p>'+
+      '</div>';
+  var infoMagdalena = new google.maps.InfoWindow({
+    content: magdalena
+  });
+  var placeMagdalena= new google.maps.LatLng(2.444282, -72.266054);
+  markerMagdalena = new google.maps.Marker({
+    position: placeMagdalena,
+    title: "Magdalena, Capital: Santa Marta",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/magdalena_sm.jpg"
+  });
+  markerMagdalena.addListener('click', function() {
+    infoMagdalena.open(map, markerMagdalena);
+  });
+}
+
+var markerMeta;
+ var meta = '<div id="content" class="departamentos">'+
+      '<p>El departamento del Meta es uno de los 32 departamentos de Colombia, localizado en la región central del país, cuyo territorio se extiende desde el denominado piedemonte llanero hasta los Llanos Orientales. Su capital es la ciudad de Villavicencio, el principal centro urbano de la Orinoquía colombiana y a tan sólo 89,9 kilómetros al sur de Bogotá, la capital del país.7 El departamento del Meta es uno de los más extensos de Colombia, con un área de 85.770 km², que equivalen al 7,5% del territorio nacional, y posee una gran riqueza hídrica debido a los numerosos afluentes del río Orinoco que cruzan el departamento y que nacen en la Cordillera Oriental. </p>'+
+      '</div>';
+  var infoMeta = new google.maps.InfoWindow({
+    content: meta
+  });
+  var placeMeta= new google.maps.LatLng(2.444282, -72.266054);
+  markerMeta = new google.maps.Marker({
+    position: placeMeta,
+    title: "Meta, Capital: Villavicencio",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/meta_sm.jpg"
+  });
+  markerMeta.addListener('click', function() {
+    infoMeta.open(map, markerMeta);
+  });
+}
+
+var markerNarino;
+ var narino = '<div id="content" class="departamentos">'+
+      '<p>Nariño es un departamento de Colombia ubicado al suroeste del país, sobre la frontera con Ecuador y con orillas en el océano Pacífico. Su capital es San Juan de Pasto. </p>'+
+      '</div>';
+  var infoNarino = new google.maps.InfoWindow({
+    content: narino
+  });
+  var placeNarino= new google.maps.LatLng(2.444282, -72.266054);
+  markerNarino = new google.maps.Marker({
+    position: placeNarino,
+    title: "Nariño, Capital: Pasto",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/nariño_sm.jpg"
+  });
+  markerNarino.addListener('click', function() {
+    infoNarino.open(map, markerNarino);
+  });
+}
+
+var markerNortedeSantander;
+ var nortedeSantander = '<div id="content" class="departamentos">'+
+      '<p>Norte de Santander es uno de los 32 departamentos de Colombia. Está ubicado en la zona nororiental del país sobre la frontera con Venezuela.7 Forma parte de la región Andina. Tiene 40 municipios agrupados en 6 subregiones, 2 provincias y un área metropolitana. Su capital es la ciudad de Cúcuta. </p>'+
+      '</div>';
+  var nortedeSantander = new google.maps.InfoWindow({
+    content: nortedeSantander
+  });
+  var placeNortedeSantander= new google.maps.LatLng(2.444282, -72.266054);
+  markerNortedeSantander = new google.maps.Marker({
+    position: placeNortedeSantander,
+    title: "Norte de Santander, Capital: Cucuta",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/nariño_sm.jpg"
+  });
+  markerNortedeSantander.addListener('click', function() {
+    infoNortedeSantander.open(map, markerNortedeSantander);
+  });
+}
+
+var markerPutumayo;
+ var putumayo = '<div id="content" class="departamentos">'+
+      '<p>El Putumayo es uno de los 32 departamentos de Colombia y se encuentra al suroeste del país, al norte de las fronteras con Ecuador provincia de Sucumbíos y Perú departamento de Loreto. Al norte se encuentran los departamentos de Cauca y Caquetá, al oeste el departamento de Nariño y al este el departamento del Amazonas. El territorio del departamento hace parte además de la región amazónica colombiana. Tiene una superficie de 24.885 km². </p>'+
+      '</div>';
+  var Putumayo = new google.maps.InfoWindow({
+    content: putumayo
+  });
+  var placePutumayo= new google.maps.LatLng(2.444282, -72.266054);
+  markerPutumayo = new google.maps.Marker({
+    position: placePutumayo,
+    title: "Putumayo, Capital: Mocoa",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/putumayo_sm.jpg"
+  });
+  markerPutumayo.addListener('click', function() {
+    infoPutumayo.open(map, markerPutumayo);
+  });
+}
+
+var markerQuindio;
+ var quindio = '<div id="content" class="departamentos">'+
+      '<p>El Quindío es uno de los 32 departamentos de Colombia. Se encuentra en la región oeste-central del país. Su capital es Armenia. Se encuentra ubicado en la región andina, forma parte del Eje Cafetero y de la región paisa, lo cual se hace evidente al visitar uno de los parques más atractivos de Colombia, el Parque Nacional del Café.</p>'+
+      '</div>';
+  var quindio = new google.maps.InfoWindow({
+    content: quindio
+  });
+  var placeQuindio= new google.maps.LatLng(2.444282, -72.266054);
+  markerQuindio = new google.maps.Marker({
+    position: placeQuindio,
+    title: "Quindio, Capital: Armenia",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/putumayo_sm.jpg"
+  });
+  markerQuindio.addListener('click', function() {
+    infoQuindio.open(map, markerQuindio);
+  });
+}
+
+var markerRisaralda;
+ var risaralda = '<div id="content" class="departamentos">'+
+      '<p>Risaralda es uno de los 32 departamentos6 de Colombia. Cuenta con una población de 951.945 habitantes. La capital es Pereira que cuenta con el 49% de su población total y los principales municipios son Dosquebradas, Santa Rosa de Cabal y La Virginia.</p>'+
+      '</div>';
+  var risaralda = new google.maps.InfoWindow({
+    content: risaralda
+  });
+  var placeRisaralda= new google.maps.LatLng(2.444282, -72.266054);
+  markerRisaralda = new google.maps.Marker({
+    position: placeRisaralda,
+    title: "Risaralda, Capital: pereira",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/risaralda_sm.jpg"
+  });
+  markerRisaralda.addListener('click', function() {
+    infoRisaralda.open(map, markerRisaralda);
+  });
+}
+
+var markerAndresyProvidencia;
+ var andresyProvidencia = '<div id="content" class="departamentos">'+
+      '<p>El Archipiélago de San Andrés, Providencia y Santa Catalina (inglés y sanandresano: Archipelago of San Andrés, Providencia and Santa Catalina) es un departamento de Colombia localizado al occidente del mar Caribe, a 775 kilómetros (480 millas náuticas) al noroeste de la costa Atlántica del país y a 220 km (140 millas náuticas) de las costas orientales de Nicaragua.</p>'+
+      '</div>';
+  var andresyProvidencia = new google.maps.InfoWindow({
+    content: andresyProvidencia
+  });
+  var placeAndresyProvidencia= new google.maps.LatLng(2.444282, -72.266054);
+  markerAndresyProvidencia = new google.maps.Marker({
+    position: placeAndresyProvidencia,
+    title: "San Andres y Providencia, Capital: San Andres",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/risaralda_sm.jpg"
+  });
+  markerAndresyProvidencia.addListener('click', function() {
+    infoAndresyProvidencia.open(map, markerAndresyProvidencia);
+  });
+}
+
+var markerSantander;
+ var santander = '<div id="content" class="departamentos">'+
+      '<p>Santander es un departamento de Colombia localizado en la zona nororiental del país en la región Andina. Es la sexta división político-administrativa en aglomeración de personas y la cuarta economía nacional por su PIB. Su capital Bucaramanga es la novena ciudad en población y la quinta zona metropolitana más poblada del país.</p>'+
+      '</div>';
+  var santander = new google.maps.InfoWindow({
+    content: santander
+  });
+  var placeSantander= new google.maps.LatLng(2.444282, -72.266054);
+  markerSantander = new google.maps.Marker({
+    position: placeSantander,
+    title: "Santander, Capital: Bucaramanga",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/sucre_sm.jpg"
+  });
+  markerSantander.addListener('click', function() {
+    infoSantander.open(map, markerSantander);
+  });
+}
+
+var markerTolima;
+ var tolima = '<div id="content" class="departamentos">'+
+      '<p>Tolima es uno de los 32 departamentos de Colombia, situado en la región Andina, en el centro-occidente del país. Limita por el norte y el occidente con el departamento de Caldas; por el oriente con el departamento de Cundinamarca; por el sur con los departamentos del Huila y Cauca, y por el occidente con los departamentos de Valle del Cauca, Quindío y Risaralda.7 Tiene una superficie de 23.562 km² y su capital es Ibagué.</p>'+
+      '</div>';
+  var tolima = new google.maps.InfoWindow({
+    content: tolima
+  });
+  var placeTolima= new google.maps.LatLng(2.444282, -72.266054);
+  markerTolima = new google.maps.Marker({
+    position: placeTolima,
+    title: "Tolima, Capital: Ibague",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/tolima_sm.jpg"
+  });
+  markerTolima.addListener('click', function() {
+    infoTolima.open(map, markerTolima);
+  });
+}
+
+var markerValle;
+ var valle = '<div id="content" class="departamentos">'+
+      '<p>El Valle del Cauca es uno de los 32 departamentos de Colombia, situado en el suroccidente del país. Gran parte del departamento está entre la Cordillera Occidental y la Cordillera Central de los Andes, en el valle geográfico del río Cauca de donde proviene su nombre. </p>'+
+      '</div>';
+  var valle = new google.maps.InfoWindow({
+    content: valle
+  });
+  var placeValle= new google.maps.LatLng(2.444282, -72.266054);
+  markerValle = new google.maps.Marker({
+    position: placeValle,
+    title: "Valle del Cauca, Capital: Cali",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/tolima_sm.jpg"
+  });
+  markerValle.addListener('click', function() {
+    infoValle.open(map, markerValle);
+  });
+}
+
+var markerVaupes;
+ var vaupes = '<div id="content" class="departamentos">'+
+      '<p>Vaupés (también referido como el Vaupés) es uno de los 32 departamentos de Colombia, situado en la Amazonía colombiana. Posee una superficie de 54.135 km² y una población para 2012 de 42 392 habitantes, en su gran mayoría indígenas. </p>'+
+      '</div>';
+  var vaupes = new google.maps.InfoWindow({
+    content: vaupes
+  });
+  var placeVaupes= new google.maps.LatLng(2.444282, -72.266054);
+  markerVaupes = new google.maps.Marker({
+    position: placeVaupes,
+    title: "Vaupes, Capital: Mitú",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/vaupes_sm.jpg"
+  });
+  markerVaupes.addListener('click', function() {
+    infoVaupes.open(map, markerVaupes);
+  });
+}
+
+var markerVichada;
+ var vichada = '<div id="content" class="departamentos">'+
+      '<p>Vichada es uno de los 32 departamentos de Colombia. Está localizado en la región oriental de Colombia, dentro del cual se encuentra el Parque nacional El Tuparro. Es además el segundo Departamento más grande de Colombia, después de Amazonas.
+ </p>'+
+      '</div>';
+  var vichada = new google.maps.InfoWindow({
+    content: vichada
+  });
+  var placeVichada= new google.maps.LatLng(2.444282, -72.266054);
+  markerVichada = new google.maps.Marker({
+    position: placeVichada,
+    title: "Vichada, Capital: Puerto Carreño",
+    map: map,
+    icon: "http://www.enciclopediacolombiana.com/enciclopediacolombiana/departamentos/banderas/vichada_sm.jpg"
+  });
+  markerVichada.addListener('click', function() {
+    infoVichada.open(map, markerVichada);
+  });
+}
+
