@@ -1,5 +1,28 @@
 
-<div id="Fisiografia">
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script type="text/javascript">
+    $(document).ready(function()
+    {
+        $("#sistAndino").mlens(
+        {
+            imgSrc: $("#sistAndino").attr("data-big"),   // path of the hi-res version of the image
+            lensShape: "circle",                // shape of the lens (circle/square)
+            lensSize: 80,                  // size of the lens (in px)
+            borderSize: 4,                  // size of the lens border (in px)
+            borderColor: "#fff",                // color of the lens border (#hex)
+            borderRadius: 0,                // border radius (optional, only if the shape is square)
+            imgOverlay: $("#sistAndino").attr("data-overlay"), // path of the overlay image (optional)
+            overlayAdapt: true // true if the overlay image has to adapt to the lens size (true/false)
+        });
+    });
+    </script>
+</head>
+
+<body>
+<div id="Fisiografia" class="col-md-8">
 	
 	<h3>Fisiografia</h3>
 
@@ -8,17 +31,17 @@
 Colombia es aproximadamente un 40% montañoso. El relieve colombiano se configuró en la era secundaria, cuando los procesos geológicos de plegamiento y subducción llevaron a que las aguas del océano se retiraran, permitiendo el surgimiento de las cordilleras Occidental y Central. En la era terciaria surgió la cordillera Oriental y los sistemas independientes.
 		</p>
 	
-		<div  id ="id0" onclick="document.getElementById('id01').style.display='block'" class="regiones2" class="col-xs-6 col-sm-3"> Sistema Andino</div>
-		<div id ="id1" onclick="document.getElementById('id02').style.display='block'" class="regiones2" class="col-xs-6 col-sm-3">Sistemas perifericos</div>
-		<div id ="id2" onclick="document.getElementById('id03').style.display='block'" class="regiones2" class="col-xs-6 col-sm-3">Volcanes y zonas sismicas</div>
-		<div id ="id3" onclick="document.getElementById('id04').style.display='block'" class="regiones2" class="col-xs-6 col-sm-3">Nevados</div>
+		<div  id ="id0" onclick="document.getElementById('id01').style.display='block'" class="regiones" > Sistema Andino</div>
+		<div id ="id1" onclick="document.getElementById('id02').style.display='block'" class="regiones" >Sistemas perifericos</div>
+		<div id ="id2" onclick="document.getElementById('id03').style.display='block'" class="regiones"  >Volcanes y zonas sismicas</div>
+		<div id ="id3" onclick="document.getElementById('id04').style.display='block'" class="regiones" >Nevados</div>
 
 
-		<div id="id01" class="w3-modal">
-		  <div class="w3-modal-content w3-animate-left">
-		    <div class="w3-container">
+		<div id="id01" class="w3-modal" >
+		  <div class="w3-modal-content w3-animate-left" >
+		    <div class="w3-container" >
 		      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">×</span>
-		      <h4>Sistema Andino </h4> 
+		      <h3><br>Sistema Andino </h3> 
 			<p id="parrafos">La Cordillera de los Andes, que cubre el subcontinente desde el extremo sur en la Patagonia en el borde occidental, tiene su final en la parte más septentrional de Sudamérica, la cual cubre una parte considerable de Colombia. En Colombia, los Andes se ramifican en tres vertientes:</p>
 
 				<ul type = disk >
@@ -42,13 +65,13 @@ Las tres cordilleras, junto con los valles interandinos forman la Región de los
 		  </div>
 		</div>
 
-		 <div id="id02" class="w3-modal">
-		  <div class="w3-modal-content w3-animate-left">
-		    <div class="w3-container">
+		 <div id="id02" class="w3-modal" >
+		  <div class="w3-modal-content w3-animate-left" >
+		    <div class="w3-container" >
 		      <span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn">×</span>
-		      <h4>Sistemas prerifericos </h4> 
+		      <h3>Sistemas prerifericos </h3> 
 			<p id="parrafos">Son los sistemas que por su situación o constitución se les considera independiente al sistema andino, la mayoría de los cuales se hallan en cercanías de las costas Caribe y Pacífica o en la región de los llanos.</p>
-		      <h6>Sistemas montañosos costeros:</h6>
+		      <h4>Sistemas montañosos costeros:</h4>
 		      <p id="parrafos">Entre los principales sistemas montañosos costeros se encuentran:
 				<ul type = disk >
     				<li>La Sierra Nevada de Santa Marta, que es la formación montañosa litoral más alta del mundo y contiene las cumbres más altas de 					<li>Colombia, los picos gemelos Pico Cristóbal Colón y Pico Simón Bolívar a 5.775 msnm.
@@ -59,7 +82,7 @@ Las tres cordilleras, junto con los valles interandinos forman la Región de los
     				<li>Las Cerros de la Guajira se sitúan al noreste de la península que les da su nombre, su altura máxima es la Serranía Macuira de 860 metros.
 				</ul>
 </p>
-		      <h6>Relieve de la región oriental:</h6>
+		      <h4>Relieve de la región oriental:</h4>
 		      <p id="parrafos">Integrada principalmente por planicies, en la región oriental se destacan:
 			<ul type = disk >
    			<li> La Sierra de la Macarena, en el Meta, una de las serranías más importantes de Colombia por su fauna y su flora únicas. Su máxima altura es 2.200 m.
@@ -78,11 +101,11 @@ La mayoría de estas son formaciones del escudo de las Guayanas, una de las zona
 		</div>
 
 
-		<div id="id03" class="w3-modal">
+		<div id="id03" class="w3-modal" >
 		  <div class="w3-modal-content w3-animate-left">
 		    <div class="w3-container">
 		      <span onclick="document.getElementById('id03').style.display='none'" class="w3-closebtn">×</span>
-		      <h4>Volcanes y zonas sismicas</h4>
+		      <h3>Volcanes y zonas sismicas</h3>
 		      <p id="parrafos">El territorio colombiano hace parte del Cinturón de Fuego del Pacífico. Los sistemas montañosos y algunas islas son de origen volcánico. Los sismos demuestran la actividad tectónica del territorio. Los volcanes más importantes son:</p>
 		      <p id="parrafos">
 			<ul type = disk >
@@ -92,20 +115,20 @@ La mayoría de estas son formaciones del escudo de las Guayanas, una de las zona
     			<li>Nevado del Ruiz, el cual también es un volcán.
     			<li>Nevado del Huila.
 			</ul></p>
-			
+		
 			<figure>
 				<img id="img1" src="../img/volcanes.png" />
 			</figure>
-
+		
 		    </div>
 		  </div>
 		</div> 
 
-		<div id="id04" class="w3-modal">
+		<div id="id04" class="w3-modal" >
 		  <div class="w3-modal-content w3-animate-left">
 		    <div class="w3-container">
 		      <span onclick="document.getElementById('id04').style.display='none'" class="w3-closebtn">×</span>
-		      <h4>Nevados</h4>
+		      <h3>Nevados</h3>
 		      <p id="parrafos">Las alturas son otra característica del relieve nacional, muchas de ellas con nieves y hielos perpetuos de origen glaciar. Se destacan:</p>
 		      
 		      <p id="parrafos">
@@ -127,13 +150,20 @@ La mayoría de estas son formaciones del escudo de las Guayanas, una de las zona
 		    </div>
 		  </div>
 		</div>
-
-	<div id="fisiografia">
+</div>
+	<div id="fisiografia" class="col-md-4" >
 			<figure>
-				<img id="img1" src="../img/sistemaAndino.png" />
+				<img id="sistAndino" src="../img/sistemaAndino.png" data-big="../img/sistemaAndino2.png" data-overlay="../img/fondo.png" />
 			</figure>
-		</div>
+	</div>
 
 
 	
-</div>
+
+
+<!----------------------------------------------------------------------
+    <div id="contenido">
+       <img id="botella" src="imagen_640px.jpg" alt="botella con zoom" data-big="imagen_1280px.jpg" data-overlay="fondo.png" />
+    </div>-->
+</body>
+</html>
