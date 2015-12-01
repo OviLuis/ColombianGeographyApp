@@ -323,8 +323,7 @@ var markerGuaviare;
   markerGuaviare.addListener('click', function() {
     infoGuaviare.open(map, markerGuaviare);
   });
-}
-
+  
 var markerHuila;
  var huila = '<div id="content" class="departamentos">'+
       '<p> Huila es uno de los 32 departamentos de Colombia, está localizado al suroccidente del país en la región andina. Su capital es Neiva, considerada como una de las ciudades más importantes del sur de Colombia. Fue creado por la ley 46 del 29 de abril de 1905, constituido por la provincia de Neiva y la del sur, pertenecientes al antiguo Estado Soberano del Tolima. </p>'+
@@ -343,7 +342,6 @@ var markerHuila;
   markerHuila.addListener('click', function() {
     infoHuila.open(map, markerHuila);
   });
-}
 
 var markerLaGuajira;
  var laGuajira = '<div id="content" class="departamentos">'+
@@ -362,7 +360,6 @@ var markerLaGuajira;
   markerLaGuajira.addListener('click', function() {
     infoLaGuajira.open(map, markerLaGuajira);
   });
-}
 
 var markerMagdalena;
  var magdalena = '<div id="content" class="departamentos">'+
@@ -381,7 +378,6 @@ var markerMagdalena;
   markerMagdalena.addListener('click', function() {
     infoMagdalena.open(map, markerMagdalena);
   });
-}
 
 var markerMeta;
  var meta = '<div id="content" class="departamentos">'+
@@ -400,7 +396,6 @@ var markerMeta;
   markerMeta.addListener('click', function() {
     infoMeta.open(map, markerMeta);
   });
-}
 
 var markerNarino;
  var narino = '<div id="content" class="departamentos">'+
@@ -419,7 +414,6 @@ var markerNarino;
   markerNarino.addListener('click', function() {
     infoNarino.open(map, markerNarino);
   });
-}
 
 var markerNortedeSantander;
  var nortedeSantander = '<div id="content" class="departamentos">'+
@@ -438,7 +432,6 @@ var markerNortedeSantander;
   markerNortedeSantander.addListener('click', function() {
     infoNortedeSantander.open(map, markerNortedeSantander);
   });
-}
 
 var markerPutumayo;
  var putumayo = '<div id="content" class="departamentos">'+
@@ -457,7 +450,6 @@ var markerPutumayo;
   markerPutumayo.addListener('click', function() {
     infoPutumayo.open(map, markerPutumayo);
   });
-}
 
 var markerQuindio;
  var quindio = '<div id="content" class="departamentos">'+
@@ -476,7 +468,6 @@ var markerQuindio;
   markerQuindio.addListener('click', function() {
     infoQuindio.open(map, markerQuindio);
   });
-}
 
 var markerRisaralda;
  var risaralda = '<div id="content" class="departamentos">'+
@@ -495,7 +486,6 @@ var markerRisaralda;
   markerRisaralda.addListener('click', function() {
     infoRisaralda.open(map, markerRisaralda);
   });
-}
 
 var markerAndresyProvidencia;
  var andresyProvidencia = '<div id="content" class="departamentos">'+
@@ -514,7 +504,6 @@ var markerAndresyProvidencia;
   markerAndresyProvidencia.addListener('click', function() {
     infoAndresyProvidencia.open(map, markerAndresyProvidencia);
   });
-}
 
 var markerSantander;
  var santander = '<div id="content" class="departamentos">'+
@@ -533,7 +522,6 @@ var markerSantander;
   markerSantander.addListener('click', function() {
     infoSantander.open(map, markerSantander);
   });
-}
 
 var markerSucre;
  var sucre = '<div id="content" class="departamentos">'+
@@ -552,7 +540,6 @@ var markerSucre;
   markerSucre.addListener('click', function() {
     infoSucre.open(map, markerSucre);
   });
-}
 
 var markerTolima;
  var tolima = '<div id="content" class="departamentos">'+
@@ -571,7 +558,6 @@ var markerTolima;
   markerTolima.addListener('click', function() {
     infoTolima.open(map, markerTolima);
   });
-}
 
 var markerValle;
  var valle = '<div id="content" class="departamentos">'+
@@ -590,7 +576,6 @@ var markerValle;
   markerValle.addListener('click', function() {
     infoValle.open(map, markerValle);
   });
-}
 
 var markerVaupes;
  var vaupes = '<div id="content" class="departamentos">'+
@@ -609,7 +594,6 @@ var markerVaupes;
   markerVaupes.addListener('click', function() {
     infoVaupes.open(map, markerVaupes);
   });
-}
 
 var markerVichada;
  var vichada = '<div id="content" class="departamentos">'+
