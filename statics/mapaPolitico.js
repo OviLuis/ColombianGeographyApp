@@ -613,8 +613,7 @@ var markerVaupes;
 
 var markerVichada;
  var vichada = '<div id="content" class="departamentos">'+
-      '<p>Vichada es uno de los 32 departamentos de Colombia. Está localizado en la región oriental de Colombia, dentro del cual se encuentra el Parque nacional El Tuparro. Es además el segundo Departamento más grande de Colombia, después de Amazonas.
- </p>'+
+      '<p>Vichada es uno de los 32 departamentos de Colombia. Está localizado en la región oriental de Colombia, dentro del cual se encuentra el Parque nacional El Tuparro. Es además el segundo Departamento más grande de Colombia, después de Amazonas.</p>'+
       '</div>';
   var vichada = new google.maps.InfoWindow({
     content: vichada
