@@ -86,20 +86,6 @@ footer{
 	
 }
 
-.regiones2{
-	background-color: #696969;
-	text-align: center;
-	border-radius: 8px;
-	width: 180px; 
-	height: 60px;
-	margin: 10px;
-	margin-left: 50px;
-	margin-top: 15px;
-	padding: 10px;
-	color: white;
-	
-}
-
 div.regiones:hover {
 	border: 2px solid #1f1f14;
 	background: #777;
@@ -334,10 +320,11 @@ div#f1:hover {
 
 #fisiografia img{
 	position: absolute;
-	top: 180px;
-	left: 500px;
+	top: 100px;
 	width: 300px;
 	height:300px;
+	border-radius: 4px;
+	margin: 10px;
 
 }
 
