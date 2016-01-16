@@ -3,185 +3,203 @@
 <head>
 	<title>Regiones Naturales</title>
 	
+
+    
+	  
+	
+
+	<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $("#regNaturales").mlens(
+        {
+            imgSrc: $("#regNaturales").attr("data-big"),   // path of the hi-res version of the image
+            lensShape: "circle",                // shape of the lens (circle/square)
+            lensSize: 180,                  // size of the lens (in px)
+            borderSize: 4,                  // size of the lens border (in px)
+            borderColor: "#fff",                // color of the lens border (#hex)
+            borderRadius: 0,                // border radius (optional, only if the shape is square)
+            imgOverlay: $("#regNaturales").attr("data-overlay"), // path of the overlay image (optional)
+            overlayAdapt: true // true if the overlay image has to adapt to the lens size (true/false)
+        });
+    });
+    </script>
 	
 	
 </head>
 <body>
-<div id="regionesNaturales" class="col-md-4">
+<div id="regionesNaturales" class="container" >
 	
 	<h3>Regiones Naturales</h3>
 
 		<p> En el territorio colombiano, podemos establecer cinco  grandes regiones geograficas:
 		</p>
+
+		<div class="row">
+				<div class="col s7 push-s5">
+					<figure>
+						<img class="imagenRegNaturales"  id="regNaturales" src="../img/regiones_naturales.png" alt="botella con zoom" data-big="../img/regiones_naturales2.png" data-overlay="../img/fondo0.png"  />
+					</figure>
+				</div>
+
+				<div class="col s5 pull-s7 regiones modal-trigger waves-effect waves-teal" data-target="id02" >Región Andina</div>
+				<div class="col s5 pull-s7 regiones modal-trigger" data-target="id01">Región Amazonica</div>
+				<div class="col s5 pull-s7 regiones modal-trigger" data-target="id03">Región Caribe</div>
+				<div class="col s5 pull-s7 regiones modal-trigger" data-target="id04">Región Pacífica</div>
+				<div class="col s5 pull-s7 regiones modal-trigger" data-target="id05">Región Insular</div>
+				<div class="col s5 pull-s7 regiones modal-trigger" data-target="id06">Región Orinoquía</div> 
+
+		</div>
+
 	
-		<div  id ="id0" onclick="document.getElementById('id01').style.display='block'" class="regiones"> region Amazonica</div>
-		<div id ="id1" onclick="document.getElementById('id02').style.display='block'" class="regiones">Región Andina</div>
-		<div id ="id2" onclick="document.getElementById('id03').style.display='block'" class="regiones">Región Caribe</div>
-		<div id ="id3" onclick="document.getElementById('id04').style.display='block'" class="regiones">Región Costa Pacífica</div>
-		<div id ="id4" onclick="document.getElementById('id05').style.display='block'" class="regiones">Región Insular</div>
-		<div id ="id5" onclick="document.getElementById('id06').style.display='block'" class="regiones">Región Orinoquía</div>
+
+			 <div id="id01" class="modal">
+			  
+			    <div class="modal-content" id="content">
+			       <span id="bypassme" data-target="id01" class=" modal-action modal-close waves-effect waves-green btn-flat">×</span>
+			      <h4>Región Amazónica: </h4> 
+			      <h6>Aspecto físico</h6>
+			      <p>La región de la Amazonia colombiana se extiende entre la cordillera Oriental y los limites de Colombia con Venezuela y Brasil.Los departamentos que conforman esta región son: Putumayo, Caquetá, Guainía, Vaupés y Amazonas.Esta región es una llanura muy extensa.Presenta pequñas elevaciones, como la serranía de Chiribiquete, la mesa de Iguaje y los cerros de Cumare y San José.</p>
+			      <h6>Economía</h6>
+			      <p>La región cuenta con importante reservas minerales de hierro, bauxita, uranio y petróleo.La agricultura es una actividad poco productiva, por la escasa fertilidad de los suelos.La pesca es abundante y necesaria para la alimentación de la población.</p>
+			      <h6>Aspecto Humano</h6>
+			      <p>El interior de la selva esta habitado por numeros indigenas cunas, huitosos, sibundores, tucanos, guayaberos e ingas.</p>
+
+			      <figure>
+			      	<img src="../img/región_Amazónica.png" width="500" height="400">
+
+			      </figure>
+
+			    </div>
+			    <div onclick="javascript:demoFromHTML()">
+			     	<img src="../img/save.png" width="40" height="30">
+			    </div>
+			  
+			</div>
+
+
+			
+
+
+			<div id="id02" class="modal">
+			  
+			    <div class="modal-content" id="content2">
+			      <span id="bypassme" data-target="id02" class=" modal-action modal-close waves-effect waves-green btn-flat">×</span>
+			      <h4>Región Andina: </h4>
+			      <h6>Aspecto fisico</h6>
+			      <p>La region Andina ocupa la parte central de nuesti pais, donde se levantan las tres cordilleras pertenecientes a parte de la gran cordillera de los Andes que corresponde a América</p>
+			      <p>En la region Andina se encuentran los departamentos de Huila, Tolima, Cundinamarca, Boyaca, Antioquia, Santander, Norte de Santander, Caldas, Risaralda, Quindio y la parte oriental  de lo departamentos de Nariño, Cauca y Valle del Cauca.</p>
+			      <h6>Aspecto Economico:</h6>
+			      <p>la econimia de esta region se presentan actividades como la agricultura, que presenta pisos termicos que hacen posible que se desarrollen cultivos de café, arroz, algodon, papa, caña de azucar, frutas, flores, cebada, entre otros.</p>
+			      <p>La ganaderia, donde se produce ganado de leche en las zonas mas frias y ganado destinado a la produccion de carne. Ademas existen granjas avicolas y otras a la cria de cerdos, cabras y ovejas.</p>
+			      <p>La mineria existe una gran riqueza mineral importante para el desarrollo de la industria, se destacan el hierro, el oro, las esmeraldas, la sal, el carbon, y el petroleo.</p>
+
+			      <figure>
+			      	<img src="../img/región_Andina.png" width="500" height="400">
+			      </figure>
+
+
+			    </div>
+			    <div onclick="javascript:demoFromHTML2()">
+			     	<img src="../img/save.png" width="40" height="30">
+			    </div>
+			  
+			</div> 
+
+			<div id="id03" class="modal">
+			 
+			    <div class="modal-content ">
+			      <span id="bypassme" data-target="id03" class=" modal-action modal-close waves-effect waves-green btn-flat">×</span>
+			      <h4>Región Caribe: </h4>
+			      <p>comprende las llanuras costeras del Caribe colombiano y los grupos montañosos de la región que no pertenecen a los Andes como los Montes de María y la Sierra Nevada de Santa Marta.</p>
+			      <h6>Cultura</h6>
+			      <p>A la compleja realidad del Caribe colombiano, una región que ha dejado huella indeleble en el desarrollo de la modernidad colombiana, donde ocurrieron y ocurren manifestaciones culturales que enaltecen la cultura nacional, hay que dirigirle varias miradas. Conscientes de que la verdadera riqueza de una nación está en su gente y que el desarrollo es el despliegue de una cultura, la puesta en práctica de la visión del mundo de esa cultura, el OCC considera que una sociedad que no es capaz de pensarse a sí misma, de generar conocimiento sobre sí misma, de apropiarse del conocimiento sobre sí misma, de evaluarse a sí misma, está llamada a desaparecer. Por ello, el Observatorio valora por igual tanto un trabajo sobre la calidad de vida y la pobreza de las gentes del Caribe como otro sobre los recipientes, empaques, envases y embalajes de nuestra utilería popular o sobre las prácticas de las comunidades de pescadores artesanales.</p>
+
+			      <figure>
+			      	<img src="../img/región_del_Caribe.png" width="500" height="400">
+			      </figure>
+
+			    </div>
+			    <div onclick="javascript:demoFromHTML()">
+			     	<img src="../img/save.png" width="40" height="30">
+			    </div>
+			  
+			</div>
+
+
+			<div id="id04" class="modal">
+			  
+			    <div class="modal-content  ">
+			       <span id="bypassme" data-target="id04" class=" modal-action modal-close waves-effect waves-green btn-flat">×</span>
+			      <h4>Región Costa Pacífica: </h4>
+			      <p>comprende las llanuras costeras del Pacífico colombiano y los grupos montañosos de la región que no pertenecen a los Andes, en particular la Serranía del Baudó.</p>
+			      <p>
+			      de Colombia se encuentra ubicada al occidente de dicho país, colindante con el océano Pacífico, de donde toma su nombre. Hace parte del Chocó biogeográfico y está dividida en dos grandes zonas marcadas por el cabo Corrientes. Limita al norte con Panamá, al sur con Ecuador, al oriente por la Cordillera Occidental de los andes colombianos y al occidente por el Océano Pacífico. Las principales ciudades son Buenaventura, Tumaco y Quibdó. En ella se desarrolló la cultura Tumaco-La Tolita.
+			      </p>
+
+			      <p>
+			      	Es una región con una inmensa riqueza ecológica, hidrográfica, minera y forestal en la cual se encuentran parques nacionales naturales. Es además considerada una de las regiones de mayor biodiversidad y pluviosidad del planeta con precipitaciones del orden de los 4 000 mm/anuales según el Ministerio de Minas y Energía de Colombia.2 Es también la tierra principal de la cultura afrocolombiana y de numerosas tribus indoamericanas que fueron denominados "chocoes" por los españoles al momento de la Conquista, aunque el término incluye familias lingüísticas de diferente origen. El litoral pone a Colombia de frente al Océano más grande del mundo y con ello un campo de encuentro internacional vital para su desarrollo.
+			      </p>
+
+			      <figure>
+			      	<img src="../img/región_del_Pacífico.png" width="500" height="400">
+			      </figure>
+
+
+			    </div>
+			  
+			</div>
+
+			<div id="id05" class="modal">
+			  
+			    <div class="modal-content">
+			       <span id="bypassme" data-target="id05" class=" modal-action modal-close waves-effect waves-green btn-flat">×</span>
+			      <h4>Región Insular: </h4>
+			      <p>comprende a las islas colombianas que no son consideradas islas costeras como el Archipiélago de San Andrés y Providencia en el Mar Caribe occidental y la Isla de Malpelo en el Océano Pacífico.</p>
+			      <p>
+			      	La región insular de Colombia abarca todas las islas con las que cuenta el país; estas islas se clasifican en dos tipos de acuerdo a su posición y origen, denominándolas Continentales y Oceánicas.tiene muchos rios como son:putumayo, napo, cararay, pastaza, el baudo etc y arnilson
+			      </p>
+			      <p>
+			      	Las islas continentales son las que se ubican más próximas al territorio continental y se encuentran vinculadas geológicamente por la plataforma submarina. En el Caribe colombiano se destacan las islas Tierra Bomba, del Rosario, Barú (estas tres bordeando la bahía de Cartagena), San Bernardo (frente a la punta del mismo nombre), Fuerte y Tortuguilla. En la costa del Pacífico las islas son muy numerosas, porque muchos ríos que vierten su caudal en el océano las forman con las arenas y piedras que arrastran hasta el mar. Al subdividirse en brazos, los ríos San Juan, Tapaje, Patía y otros menores dan lugar a gran cantidad de islas. Las más importantes, sin embargo, son las islas de Cascajal, donde está enclavada la ciudad y puerto de Buenaventura, Gorgona (a 50 km de la costa), Gorgonilla, El Gallo y las tres islas sobre las que se halla edificada la ciudad de Tumaco (islas Tumaco, La Viciosa y El Morro).
+			      </p>
+
+			      <figure>
+			      	<img src="../img/región_Insular.png" width="500" height="400">
+			      </figure>
+
+			    </div>
+			  
+			</div>
+
+			<div id="id06" class="modal">
+			  
+			    <div class="modal-content">
+			      <span id="bypassme" data-target="id06" class=" modal-action modal-close waves-effect waves-green btn-flat">×</span>
+			      <h4>Región Orinoquía: </h4>
+			      <p>La Orinoquia1 es una región geográfica de Colombia determinada por la cuenca del río Orinoco, y por ubicarse en la zona oriental del país es también conocida como Llanos Orientales. Es un ecosistema que se caracteriza por ser una planicie. La región se halla entre los ríos Arauca, Guaviare, Orinoco y el Piedemonte llanero.
+			      </p>
+			      <p>Es una región de intensa actividad ganadera donde se escenificaron importantes luchas durante la época de la Independencia colombiana y venezolana. Culturalmente está habitada por el llanero, individuo común también a los Llanos venezolanos.</p>
+
+				  <p>
+				  	La Orinoquía coincide en mucho con dos regiones claramente diferenciadas y suele confundirse con ellas. La primera es una cuenca hidrográfica, la del río Orinoco. Esta se extiende desde los Andes a las selvas amazónicas (el mismo río Orinoco nace en la selva amazónica venezolana), e incluye las cuencas de los ríos Meta, Guaviare y Guainía. La segunda, los Llanos, es una región natural, cultural y política colombo-venezolana. A esta la caracterizan sus extensas sabanas de zona intertropical y bosques de galería; sus habitantes, los llaneros, tienen una cultura y una historia diferenciada.
+				  </p>
+
+				  <figure>
+			      	<img src="../img/región_de_la_Orinoquía.png" width="500" height="400">
+			      </figure>
+
+			    </div>
+			  
+			</div>
+
+
 
 		
-
-		 <div id="id01" class="w3-modal">
-		  <div class="w3-modal-content w3-animate-left">
-		    <div class="w3-container " id="content">
-		      <span  id="bypassme" onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">×</span>
-		      <p > <h4>Región Amazónica: </h4> </p>
-		      <h6>Aspecto físico</h6>
-		      <p>
-		      La región de la Amazonia colombiana se extiende entre la cordillera Oriental y los limites de Colombia con Venezuela y Brasil.Los departamentos que conforman esta región son: Putumayo, Caquetá, Guainía, Vaupés y Amazonas.Esta región es una llanura muy extensa.Presenta pequñas elevaciones, como la serranía de Chiribiquete, la mesa de Iguaje y los cerros de Cumare y San José.
-		      </p>
-		      <h6>Economía</h6>
-		      <p>La región cuenta con importante reservas minerales de hierro, bauxita, uranio y petróleo.La agricultura es una actividad poco productiva, por la escasa fertilidad de los suelos.La pesca es abundante y necesaria para la alimentación de la población.</p>
-		      <h6>Aspecto Humano</h6>
-		      <p>El interior de la selva esta habitado por numeros indigenas cunas, huitosos, sibundores, tucanos, guayaberos e ingas.</p>
-
-		     <!-- <a href="javascript:demoTwoPageDocument()" class="button"><</a>  
-		     <button onclick="javascript:demoFromHTML()" class="button">Run Code</button></p></div>-->
-		     
-
-		      <figure>
-		      	<img src="../img/región_Amazónica.png" width="500" height="400">
-
-		      </figure>
-
-		    </div>
-		    <div onclick="javascript:demoFromHTML()">
-		     	<img src="../img/save.png" width="40" height="30">
-		     </div>
-		  </div>
-		</div>
-
-
-		<div id="id02" class="w3-modal">
-		  <div class="w3-modal-content w3-animate-left">
-		    <div class="w3-container" id="content2">
-		      <span id="bypassme" onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn">×</span>
-		      <h4>Región Andina: </h4>
-		      <h6>Aspecto fisico</h6>
-		      <p>La region Andina ocupa la parte central de nuesti pais, donde se levantan las tres cordilleras pertenecientes a parte de la gran cordillera de los Andes que corresponde a América</p>
-		      <p>En la region Andina se encuentran los departamentos de Huila, Tolima, Cundinamarca, Boyaca, Antioquia, Santander, Norte de Santander, Caldas, Risaralda, Quindio y la parte oriental  de lo departamentos de Nariño, Cauca y Valle del Cauca.</p>
-		      <h6>Aspecto Economico:</h6>
-		      <p>la econimia de esta region se presentan actividades como la agricultura, que presenta pisos termicos que hacen posible que se desarrollen cultivos de café, arroz, algodon, papa, caña de azucar, frutas, flores, cebada, entre otros.</p>
-		      <p>La ganaderia, donde se produce ganado de leche en las zonas mas frias y ganado destinado a la produccion de carne. Ademas existen granjas avicolas y otras a la cria de cerdos, cabras y ovejas.</p>
-		      <p>La mineria existe una gran riqueza mineral importante para el desarrollo de la industria, se destacan el hierro, el oro, las esmeraldas, la sal, el carbon, y el petroleo.</p>
-
-		      <figure>
-		      	<img src="../img/región_Andina.png" width="500" height="400">
-		      </figure>
-
-
-		    </div>
-		    <div onclick="javascript:demoFromHTML2()">
-		     	<img src="../img/save.png" width="40" height="30">
-		     </div>
-		  </div>
-		</div> 
-
-		<div id="id03" class="w3-modal">
-		  <div class="w3-modal-content w3-animate-left">
-		    <div class="w3-container ">
-		      <span onclick="document.getElementById('id03').style.display='none'" class="w3-closebtn">×</span>
-		      <h4>Región Caribe: </h4>
-		      <p>comprende las llanuras costeras del Caribe colombiano y los grupos montañosos de la región que no pertenecen a los Andes como los Montes de María y la Sierra Nevada de Santa Marta.</p>
-		      <h6>Cultura</h6>
-		      <p>A la compleja realidad del Caribe colombiano, una región que ha dejado huella indeleble en el desarrollo de la modernidad colombiana, donde ocurrieron y ocurren manifestaciones culturales que enaltecen la cultura nacional, hay que dirigirle varias miradas. Conscientes de que la verdadera riqueza de una nación está en su gente y que el desarrollo es el despliegue de una cultura, la puesta en práctica de la visión del mundo de esa cultura, el OCC considera que una sociedad que no es capaz de pensarse a sí misma, de generar conocimiento sobre sí misma, de apropiarse del conocimiento sobre sí misma, de evaluarse a sí misma, está llamada a desaparecer. Por ello, el Observatorio valora por igual tanto un trabajo sobre la calidad de vida y la pobreza de las gentes del Caribe como otro sobre los recipientes, empaques, envases y embalajes de nuestra utilería popular o sobre las prácticas de las comunidades de pescadores artesanales.</p>
-
-		      <figure>
-		      	<img src="../img/región_del_Caribe.png" width="500" height="400">
-		      </figure>
-
-		    </div>
-
-		    <div onclick="javascript:demoFromHTML2()">
-		     	<img src="../img/save.png" width="40" height="30">
-		     </div>
-		  </div>
-		</div>
-
-
-		<div id="id04" class="w3-modal">
-		  <div class="w3-modal-content w3-animate-left">
-		    <div class="w3-container ">
-		      <span onclick="document.getElementById('id04').style.display='none'" class="w3-closebtn">×</span>
-		      <h4>Región Costa Pacífica: </h4>
-		      <p>comprende las llanuras costeras del Pacífico colombiano y los grupos montañosos de la región que no pertenecen a los Andes, en particular la Serranía del Baudó.</p>
-		      <p>
-		      de Colombia se encuentra ubicada al occidente de dicho país, colindante con el océano Pacífico, de donde toma su nombre. Hace parte del Chocó biogeográfico y está dividida en dos grandes zonas marcadas por el cabo Corrientes. Limita al norte con Panamá, al sur con Ecuador, al oriente por la Cordillera Occidental de los andes colombianos y al occidente por el Océano Pacífico. Las principales ciudades son Buenaventura, Tumaco y Quibdó. En ella se desarrolló la cultura Tumaco-La Tolita.
-		      </p>
-
-		      <p>
-		      	Es una región con una inmensa riqueza ecológica, hidrográfica, minera y forestal en la cual se encuentran parques nacionales naturales. Es además considerada una de las regiones de mayor biodiversidad y pluviosidad del planeta con precipitaciones del orden de los 4 000 mm/anuales según el Ministerio de Minas y Energía de Colombia.2 Es también la tierra principal de la cultura afrocolombiana y de numerosas tribus indoamericanas que fueron denominados "chocoes" por los españoles al momento de la Conquista, aunque el término incluye familias lingüísticas de diferente origen. El litoral pone a Colombia de frente al Océano más grande del mundo y con ello un campo de encuentro internacional vital para su desarrollo.
-		      </p>
-
-		      <figure>
-		      	<img src="../img/región_del_Pacífico.png" width="500" height="400">
-		      </figure>
-
-
-		    </div>
-		    <div onclick="javascript:demoFromHTML2()">
-		     	<img src="../img/save.png" width="40" height="30">
-		     </div>
-		  </div>
-		</div>
-
-		<div id="id05" class="w3-modal">
-		  <div class="w3-modal-content w3-animate-left">
-		    <div class="w3-container">
-		      <span onclick="document.getElementById('id05').style.display='none'" class="w3-closebtn">×</span>
-		      <h4>Región Insular: </h4>
-		      <p>comprende a las islas colombianas que no son consideradas islas costeras como el Archipiélago de San Andrés y Providencia en el Mar Caribe occidental y la Isla de Malpelo en el Océano Pacífico.</p>
-		      <p>
-		      	La región insular de Colombia abarca todas las islas con las que cuenta el país; estas islas se clasifican en dos tipos de acuerdo a su posición y origen, denominándolas Continentales y Oceánicas.tiene muchos rios como son:putumayo, napo, cararay, pastaza, el baudo etc y arnilson
-		      </p>
-		      <p>
-		      	Las islas continentales son las que se ubican más próximas al territorio continental y se encuentran vinculadas geológicamente por la plataforma submarina. En el Caribe colombiano se destacan las islas Tierra Bomba, del Rosario, Barú (estas tres bordeando la bahía de Cartagena), San Bernardo (frente a la punta del mismo nombre), Fuerte y Tortuguilla. En la costa del Pacífico las islas son muy numerosas, porque muchos ríos que vierten su caudal en el océano las forman con las arenas y piedras que arrastran hasta el mar. Al subdividirse en brazos, los ríos San Juan, Tapaje, Patía y otros menores dan lugar a gran cantidad de islas. Las más importantes, sin embargo, son las islas de Cascajal, donde está enclavada la ciudad y puerto de Buenaventura, Gorgona (a 50 km de la costa), Gorgonilla, El Gallo y las tres islas sobre las que se halla edificada la ciudad de Tumaco (islas Tumaco, La Viciosa y El Morro).
-		      </p>
-
-		      <figure>
-		      	<img src="../img/región_Insular.png" width="500" height="400">
-		      </figure>
-
-		    </div>
-		    <div onclick="javascript:demoFromHTML2()">
-		     	<img src="../img/save.png" width="40" height="30">
-		     </div>
-		  </div>
-
-		</div>
-
-		<div id="id06" class="w3-modal">
-		  <div class="w3-modal-content w3-animate-left">
-		    <div class="w3-container">
-		      <span onclick="document.getElementById('id06').style.display='none'" class="w3-closebtn">×</span>
-		      <h4>Región Orinoquía: </h4>
-		      <p>La Orinoquia1 es una región geográfica de Colombia determinada por la cuenca del río Orinoco, y por ubicarse en la zona oriental del país es también conocida como Llanos Orientales. Es un ecosistema que se caracteriza por ser una planicie. La región se halla entre los ríos Arauca, Guaviare, Orinoco y el Piedemonte llanero.
-		      </p>
-		      <p>Es una región de intensa actividad ganadera donde se escenificaron importantes luchas durante la época de la Independencia colombiana y venezolana. Culturalmente está habitada por el llanero, individuo común también a los Llanos venezolanos.</p>
-
-			  <p>
-			  	La Orinoquía coincide en mucho con dos regiones claramente diferenciadas y suele confundirse con ellas. La primera es una cuenca hidrográfica, la del río Orinoco. Esta se extiende desde los Andes a las selvas amazónicas (el mismo río Orinoco nace en la selva amazónica venezolana), e incluye las cuencas de los ríos Meta, Guaviare y Guainía. La segunda, los Llanos, es una región natural, cultural y política colombo-venezolana. A esta la caracterizan sus extensas sabanas de zona intertropical y bosques de galería; sus habitantes, los llaneros, tienen una cultura y una historia diferenciada.
-			  </p>
-
-			  <figure>
-		      	<img src="../img/región_de_la_Orinoquía.png" width="500" height="400">
-		      </figure>
-
-		    </div>
-		    <div onclick="javascript:demoFromHTML2()">
-		     	<img src="../img/save.png" width="40" height="30">
-		     </div>
-		  </div>
-		</div>
-
-		<div id="imagenRegNaturales">
-			<figure>
-				<img id="img1" src="../img/regiones_naturales.png" />
-			</figure>
-		</div>
 </div>
+
+<script src="../statics/efecto.js"></script>
+		
+
 
 </body>
 </html>

@@ -1,0 +1,27 @@
+#c {
+    position: center;
+    width: auto;
+    height: 498px;
+    border: 12px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(50,50,50 0.5);
+    left: 50px;
+}
+
+.hidrografia {
+    position: center;
+    width: 350px;
+    height: 500px;
+    border: 12px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(50,50,50 0.5);
+    left: 50px;
+}
+#geologia{
+   height: 480px; 
+}
+
+
+
+
+
